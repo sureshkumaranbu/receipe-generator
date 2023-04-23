@@ -59,7 +59,7 @@ const Recipe = () => {
         method: "POST",
         headers: {
           "content-type": "application/json",
-          "Authorisation": "Bearer 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"
+          "Authorisation": `Bearer ${process.env.REACT_APP_HUGGING_FACE}`
         },
         body: JSON.stringify({ inputs: inputText }),
       }
